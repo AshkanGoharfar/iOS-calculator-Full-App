@@ -22,6 +22,10 @@ class ViewController: UIViewController {
     var displayNumber_swap = ""
     var flagafterSquare = "0"
     var flagRoot = "0"
+    var flagSin = "0"
+    var flagCos = "0"
+    var flagTan = "0"
+    var flagRand = "0"
     // variable decleration for label, ! means that the variable was initialized
     @IBAction func ZeroButton_Pressed(_ sender: UIButton) {
         flagAfterOperation = "0"
@@ -307,6 +311,11 @@ class ViewController: UIViewController {
         previousOperation = ""
         currentOperation = ""
         flagAfterOperation = "0"
+        flagRoot = "0"
+        flagSin = "0"
+        flagCos = "0"
+        flagTan = "0"
+        flagRand = "0"
         self.ResultDisplayLabel.text = ""
     }
     
@@ -319,7 +328,28 @@ class ViewController: UIViewController {
         flagAfterOperation = "1"
         currentOperation = ""
         flagPercentOperaot = "0"
-        displayNumber_swap = displayNumber
+//        displayNumber_swap = displayNumber
+        
+        if (flagRoot == "1"){
+            displayNumber = String(sqrt(Double(displayNumber)!))
+        }
+        
+        if (flagSin == "1"){
+            displayNumber = String(sin(Double(displayNumber)!))
+        }
+        
+        if (flagCos == "1"){
+            displayNumber = String(cos(Double(displayNumber)!))
+        }
+        
+        if (flagTan == "1"){
+            displayNumber = String(tan(Double(displayNumber)!))
+        }
+        
+        if (flagRand == "1"){
+            displayNumber = String(Double.random(in: 0...Double(displayNumber)!))
+        }
+
         if (self.ResultDisplayLabel.text == "0"){
             self.ResultDisplayLabel.text = ""
             return
@@ -447,6 +477,22 @@ class ViewController: UIViewController {
             displayNumber = String(sqrt(Double(displayNumber)!))
         }
         
+        if (flagSin == "1"){
+            displayNumber = String(sin(Double(displayNumber)!))
+        }
+        
+        if (flagCos == "1"){
+            displayNumber = String(cos(Double(displayNumber)!))
+        }
+        
+        if (flagTan == "1"){
+            displayNumber = String(tan(Double(displayNumber)!))
+        }
+        
+        if (flagRand == "1"){
+            displayNumber = String(Double.random(in: 0...Double(displayNumber)!))
+        }
+        
         if (self.ResultDisplayLabel.text == "0"){
             self.ResultDisplayLabel.text = ""
             return
@@ -493,7 +539,29 @@ class ViewController: UIViewController {
         flagPercentOperaot = "0"
         currentOperation = "-"
         flagPercentOperaot = "0"
-        displayNumber_swap = displayNumber
+//        displayNumber_swap = displayNumber
+        
+        
+        if (flagRoot == "1"){
+            displayNumber = String(sqrt(Double(displayNumber)!))
+        }
+        
+        if (flagSin == "1"){
+            displayNumber = String(sin(Double(displayNumber)!))
+        }
+        
+        if (flagCos == "1"){
+            displayNumber = String(cos(Double(displayNumber)!))
+        }
+        
+        if (flagTan == "1"){
+            displayNumber = String(tan(Double(displayNumber)!))
+        }
+        
+        if (flagRand == "1"){
+            displayNumber = String(Double.random(in: 0...Double(displayNumber)!))
+        }
+
         if (self.ResultDisplayLabel.text == "0"){
             self.ResultDisplayLabel.text = ""
             return
@@ -539,7 +607,28 @@ class ViewController: UIViewController {
         flagAfterOperation = "1"
         currentOperation = "x"
         flagPercentOperaot = "0"
-        displayNumber_swap = displayNumber
+//        displayNumber_swap = displayNumber
+        
+        if (flagRoot == "1"){
+            displayNumber = String(sqrt(Double(displayNumber)!))
+        }
+        
+        if (flagSin == "1"){
+            displayNumber = String(sin(Double(displayNumber)!))
+        }
+        
+        if (flagCos == "1"){
+            displayNumber = String(cos(Double(displayNumber)!))
+        }
+        
+        if (flagTan == "1"){
+            displayNumber = String(tan(Double(displayNumber)!))
+        }
+        
+        if (flagRand == "1"){
+            displayNumber = String(Double.random(in: 0...Double(displayNumber)!))
+        }
+
         if (self.ResultDisplayLabel.text == "0"){
             self.ResultDisplayLabel.text = ""
             return
@@ -585,7 +674,28 @@ class ViewController: UIViewController {
         flagAfterOperation = "1"
         flagPercentOperaot = "0"
         currentOperation = "÷"
-        displayNumber_swap = displayNumber
+//        displayNumber_swap = displayNumber
+        
+        if (flagRoot == "1"){
+            displayNumber = String(sqrt(Double(displayNumber)!))
+        }
+        
+        if (flagSin == "1"){
+            displayNumber = String(sin(Double(displayNumber)!))
+        }
+        
+        if (flagCos == "1"){
+            displayNumber = String(cos(Double(displayNumber)!))
+        }
+        
+        if (flagTan == "1"){
+            displayNumber = String(tan(Double(displayNumber)!))
+        }
+        
+        if (flagRand == "1"){
+            displayNumber = String(Double.random(in: 0...Double(displayNumber)!))
+        }
+
         if (self.ResultDisplayLabel.text == "0"){
             self.ResultDisplayLabel.text = ""
             return
@@ -744,6 +854,34 @@ class ViewController: UIViewController {
             flagRoot = "1"
         }
     }
+    
+    
+    @IBAction func SinButton_Pressed(_ sender: UIButton) {
+        if ((displayNumber == "" && previousDisplayNumber == "") || flagAfterOperation == "1"){
+            flagSin = "1"
+        }
+    }
+    
+    
+    @IBAction func CosButton_Pressed(_ sender: UIButton) {
+        if ((displayNumber == "" && previousDisplayNumber == "") || flagAfterOperation == "1"){
+            flagCos = "1"
+        }
+    }
+    
+    
+    @IBAction func TanButton_Pressed(_ sender: UIButton) {
+        if ((displayNumber == "" && previousDisplayNumber == "") || flagAfterOperation == "1"){
+            flagTan = "1"
+        }
+    }
+    
+    @IBAction func RandButton_Pressed(_ sender: UIButton) {
+        if ((displayNumber == "" && previousDisplayNumber == "") || flagAfterOperation == "1"){
+            flagRand = "1"
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

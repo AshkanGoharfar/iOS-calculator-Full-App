@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  iOS-calculator-Full-App
 //
-//  Created by Ashkan Goharfar on 7/29/1400 AP.
+//  Created by Ashkan Goharfar on 10/23/2021.
 //
 
 import UIKit

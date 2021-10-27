@@ -36,6 +36,9 @@
                                 </constraints>
                                 <state key="normal" title="sin"/>
                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                <connections>
+                                    <action selector="SinButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UIW-5J-o60"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="941-c1-Yir">
                                 <rect key="frame" x="508" y="144" width="80" height="30"/>
@@ -66,6 +69,9 @@
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <state key="normal" title="tan"/>
                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                <connections>
+                                    <action selector="TanButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Dz-9c-Q2a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeZ-yh-cwO">
                                 <rect key="frame" x="508" y="296" width="80" height="30"/>
@@ -87,6 +93,9 @@
                                 </constraints>
                                 <state key="normal" title="Rand"/>
                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                <connections>
+                                    <action selector="RandButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UAA-5L-TCh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVY-Jg-zng">
                                 <rect key="frame" x="145" y="144" width="30" height="30"/>
@@ -286,6 +295,9 @@
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <state key="normal" title="cos"/>
                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                <connections>
+                                    <action selector="CosButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N6G-K9-t6g"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sb-DD-LHx">
                                 <rect key="frame" x="145" y="258" width="30" height="30"/>
