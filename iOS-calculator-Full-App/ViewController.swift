@@ -354,24 +354,30 @@ class ViewController: UIViewController {
         
         if (flagRoot == "1"){
             displayNumber = String(sqrt(Double(displayNumber)!))
+            flagRoot = "0"
         }
         
         if (flagSin == "1"){
             displayNumber = String(sin(Double(displayNumber)!))
+            flagSin = "0"
         }
         
         if (flagCos == "1"){
             displayNumber = String(cos(Double(displayNumber)!))
+            flagCos = "0"
         }
         
         if (flagTan == "1"){
             displayNumber = String(tan(Double(displayNumber)!))
+            flagTan = "0"
         }
-        
+        self.ResultDisplayLabel.text = displayNumber
         if (flagRand == "1"){
             displayNumber = String(Double.random(in: 0...Double(displayNumber)!))
+            flagRand = "0"
         }
 
+        self.ResultDisplayLabel.text = displayNumber
         if (self.ResultDisplayLabel.text == "0"){
             self.ResultDisplayLabel.text = ""
             return
@@ -456,6 +462,31 @@ class ViewController: UIViewController {
         if (flagPercentOperaot == "1"){
             return
         }
+        if (flagRoot == "1"){
+            displayNumber = String(sqrt(Double(displayNumber)!))
+            flagRoot = "0"
+        }
+        
+        if (flagSin == "1"){
+            displayNumber = String(sin(Double(displayNumber)!))
+            flagSin = "0"
+        }
+        
+        if (flagCos == "1"){
+            displayNumber = String(cos(Double(displayNumber)!))
+            flagCos = "0"
+        }
+        
+        if (flagTan == "1"){
+            displayNumber = String(tan(Double(displayNumber)!))
+            flagTan = "0"
+        }
+
+        if (flagRand == "1"){
+            displayNumber = String(Double.random(in: 0...Double(displayNumber)!))
+            flagRand = "0"
+        }
+        self.ResultDisplayLabel.text! = displayNumber
         displayNumber = String(Double(self.ResultDisplayLabel.text!)! / 100)
         currentOperation = ""
         if (previousOperation == "" || previousOperation == "=") {
@@ -497,24 +528,29 @@ class ViewController: UIViewController {
         
         if (flagRoot == "1"){
             displayNumber = String(sqrt(Double(displayNumber)!))
+            flagRoot = "0"
         }
         
         if (flagSin == "1"){
             displayNumber = String(sin(Double(displayNumber)!))
+            flagSin = "0"
         }
         
         if (flagCos == "1"){
             displayNumber = String(cos(Double(displayNumber)!))
+            flagCos = "0"
         }
         
         if (flagTan == "1"){
             displayNumber = String(tan(Double(displayNumber)!))
+            flagTan = "0"
         }
         
         if (flagRand == "1"){
             displayNumber = String(Double.random(in: 0...Double(displayNumber)!))
+            flagRand = "0"
         }
-        
+        self.ResultDisplayLabel.text = displayNumber
         if (self.ResultDisplayLabel.text == "0"){
             self.ResultDisplayLabel.text = ""
             return
@@ -566,24 +602,29 @@ class ViewController: UIViewController {
         
         if (flagRoot == "1"){
             displayNumber = String(sqrt(Double(displayNumber)!))
+            flagRoot = "0"
         }
         
         if (flagSin == "1"){
             displayNumber = String(sin(Double(displayNumber)!))
+            flagSin = "0"
         }
         
         if (flagCos == "1"){
             displayNumber = String(cos(Double(displayNumber)!))
+            flagCos = "0"
         }
         
         if (flagTan == "1"){
             displayNumber = String(tan(Double(displayNumber)!))
+            flagTan = "0"
         }
         
         if (flagRand == "1"){
             displayNumber = String(Double.random(in: 0...Double(displayNumber)!))
+            flagRand = "0"
         }
-
+        self.ResultDisplayLabel.text = displayNumber
         if (self.ResultDisplayLabel.text == "0"){
             self.ResultDisplayLabel.text = ""
             return
@@ -633,24 +674,29 @@ class ViewController: UIViewController {
         
         if (flagRoot == "1"){
             displayNumber = String(sqrt(Double(displayNumber)!))
+            flagRoot = "0"
         }
         
         if (flagSin == "1"){
             displayNumber = String(sin(Double(displayNumber)!))
+            flagSin = "0"
         }
         
         if (flagCos == "1"){
             displayNumber = String(cos(Double(displayNumber)!))
+            flagCos = "0"
         }
         
         if (flagTan == "1"){
             displayNumber = String(tan(Double(displayNumber)!))
+            flagTan = "0"
         }
         
         if (flagRand == "1"){
             displayNumber = String(Double.random(in: 0...Double(displayNumber)!))
+            flagRand = "0"
         }
-
+        self.ResultDisplayLabel.text = displayNumber
         if (self.ResultDisplayLabel.text == "0"){
             self.ResultDisplayLabel.text = ""
             return
@@ -700,24 +746,29 @@ class ViewController: UIViewController {
         
         if (flagRoot == "1"){
             displayNumber = String(sqrt(Double(displayNumber)!))
+            flagRoot = "0"
         }
         
         if (flagSin == "1"){
             displayNumber = String(sin(Double(displayNumber)!))
+            flagSin = "0"
         }
         
         if (flagCos == "1"){
             displayNumber = String(cos(Double(displayNumber)!))
+            flagCos = "0"
         }
         
         if (flagTan == "1"){
             displayNumber = String(tan(Double(displayNumber)!))
+            flagTan = "0"
         }
         
         if (flagRand == "1"){
             displayNumber = String(Double.random(in: 0...Double(displayNumber)!))
+            flagRand = "0"
         }
-
+        self.ResultDisplayLabel.text = displayNumber
         if (self.ResultDisplayLabel.text == "0"){
             self.ResultDisplayLabel.text = ""
             return
