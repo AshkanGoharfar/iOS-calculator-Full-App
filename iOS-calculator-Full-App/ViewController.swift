@@ -5,12 +5,25 @@
 //  Created by Ashkan Goharfar on 7/29/1400 AP.
 //
 
+
+/**
+ * This assignment aims to craete an iOS app for standard and scientific calulator in which when we rotete the iphone the calculator status changes using Landscape orientation concepts.
+ */
+
+
 import UIKit
 
 class ViewController: UIViewController {
 
+    // variable decleration for label, ! means that the variable was initialized
+
     @IBOutlet weak var ResultDisplayLabel: UILabel!
     
+    
+    /**
+     * Create variables for setting current display label value and the previous value in order to apply operations
+     * Crearte flags for checking status of operators to handle errors and etc.
+     */
     var displayNumber = ""
     var previousDisplayNumber = ""
     var afterEquation = "1"
@@ -26,7 +39,12 @@ class ViewController: UIViewController {
     var flagCos = "0"
     var flagTan = "0"
     var flagRand = "0"
-    // variable decleration for label, ! means that the variable was initialized
+    
+    /**
+     * Create a Zero Button Action Listener to add zero value to the current display label.
+     *
+     * @param UIButton as sender
+     */
     @IBAction func ZeroButton_Pressed(_ sender: UIButton) {
         flagAfterOperation = "0"
         flagPercentOperaot = "0"
@@ -47,7 +65,11 @@ class ViewController: UIViewController {
 
     }
     
-
+    /**
+     * Create a One Button Action Listener to add one value to the current display label.
+     *
+     * @param UIButton as sender
+     */
     @IBAction func OneButton_Pressed(_ sender: UIButton) {
         flagPercentOperaot = "0"
         flagOperator = "0"
@@ -75,7 +97,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Two Button Action Listener.
+     * Create a Two Button Action Listener to add two value to the current display label.
      *
      * @param UIButton as sender
      */
@@ -103,7 +125,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Three Button Action Listener.
+     * Create a Three Button Action Listener to add three value to the current display label.
      *
      * @param UIButton as sender
      */
@@ -131,7 +153,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Four Button Action Listener.
+     * Create a Four Button Action Listener to add four value to the current display label.
      *
      * @param UIButton as sender
      */
@@ -159,7 +181,7 @@ class ViewController: UIViewController {
     }
 
     /**
-     * Create a Five Button Action Listener.
+     * Create a Five Button Action Listener to add five value to the current display label.
      *
      * @param UIButton as sender
      */
@@ -187,7 +209,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Six Button Action Listener.
+     * Create a Six Button Action Listener to add six value to the current display label.
      *
      * @param UIButton as sender
      */
@@ -215,7 +237,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Seven Button Action Listener.
+     * Create a Seven Button Action Listener to add seven value to the current display label.
      *
      * @param UIButton as sender
      */
@@ -243,7 +265,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Eight Button Action Listener.
+     * Create a Eight Button Action Listener to add eight value to the current display label.
      *
      * @param UIButton as sender
      */
@@ -271,7 +293,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Nine Button Action Listener.
+     * Create a Nine Button Action Listener to add nine value to the current display label.
      *
      * @param UIButton as sender
      */
@@ -300,7 +322,7 @@ class ViewController: UIViewController {
 
     
     /**
-     * Create a AC Button Action Listener.
+     * Create a AC Button Action Listener to remove all of the numbers and operations with their corresponding flags in the code.
      *
      * @param UIButton as sender
      */
@@ -320,8 +342,8 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Equal Button Action Listener.
-     * Get Label data as String and split operators and numbers then handle all circumstances for them
+     * Create a Equal Button Action Listener to display calulatio results.
+     *
      * @param UIButton as sender
      */
     @IBAction func EqualButton_Pressed(_ sender: UIButton) {
@@ -385,7 +407,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Minus Plus Button Action Listener.
+     * Create a Minus Plus Button Action Listener to change value of the current number in display.
      *
      * @param UIButton as sender
      */
@@ -418,7 +440,7 @@ class ViewController: UIViewController {
     
     
     /**
-     * Create a Percent Button Action Listener.
+     * Create a Percent Button Action Listener to multiply 1 / 100 to the current number on display.
      *
      * @param UIButton as sender
      */
@@ -463,7 +485,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Plus Button Action Listener.
+     * Create a Plus Button Action Listener to apply on the current and previous number on the display label.
      *
      * @param UIButton as sender
      */
@@ -530,7 +552,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Minus Button Action Listener.
+     * Create a Minus Button Action Listener to apply on the current and previous number on the display label.
      *
      * @param UIButton as sender
      */
@@ -599,7 +621,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Multiplaction Button Action Listener.
+     * Create a Multiplaction Button Action Listener to apply on the current and previous number on the display label.
      *
      * @param UIButton as sender
      */
@@ -666,7 +688,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Devision Button Action Listener.
+     * Create a Devision Button Action Listener to apply on the current and previous number on the display label.
      *
      * @param UIButton as sender
      */
@@ -733,7 +755,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Create a Floating Point Button Action Listener.
+     * Create a Floating Point Button Action Listener to apply on the current and previous number on the display label.
      *
      * @param UIButton as sender
      */
@@ -777,7 +799,11 @@ class ViewController: UIViewController {
 
     }
     
-    
+    /**
+     * Create a Pi Button Action Listener to call Pi value as the current number on the display label.
+     *
+     * @param UIButton as sender
+     */
     @IBAction func PiButton_Pressed(_ sender: UIButton) {
         flagPercentOperaot = "0"
         flagOperator = "0"
@@ -802,6 +828,11 @@ class ViewController: UIViewController {
 
     }
     
+    /**
+     * Create a Square Button Action Listener to apply on the current number on the display label.
+     *
+     * @param UIButton as sender
+     */
     @IBAction func SquareButton_Pressed(_ sender: UIButton) {
         if (self.ResultDisplayLabel.text == "0" || self.ResultDisplayLabel.text! == ""){
             self.ResultDisplayLabel.text = ""
@@ -848,7 +879,11 @@ class ViewController: UIViewController {
     }
     
     
-    
+    /**
+     * Create a Suare Root Button Action Listener to apply on the current number on the display label.
+     *
+     * @param UIButton as sender
+     */
     @IBAction func RootButton_Pressed(_ sender: UIButton) {
         if ((displayNumber == "" && previousDisplayNumber == "") || flagAfterOperation == "1"){
             flagRoot = "1"
@@ -856,26 +891,44 @@ class ViewController: UIViewController {
     }
     
     
+    /**
+     * Create a Sin Button Action Listener to apply on the current number on the display label.
+     *
+     * @param UIButton as sender
+     */
     @IBAction func SinButton_Pressed(_ sender: UIButton) {
         if ((displayNumber == "" && previousDisplayNumber == "") || flagAfterOperation == "1"){
             flagSin = "1"
         }
     }
     
-    
+    /**
+     * Create a Cos Button Action Listener to apply on the current number on the display label.
+     *
+     * @param UIButton as sender
+     */
     @IBAction func CosButton_Pressed(_ sender: UIButton) {
         if ((displayNumber == "" && previousDisplayNumber == "") || flagAfterOperation == "1"){
             flagCos = "1"
         }
     }
     
-    
+    /**
+     * Create a Tan Button Action Listener to apply on the current number on the display label.
+     *
+     * @param UIButton as sender
+     */
     @IBAction func TanButton_Pressed(_ sender: UIButton) {
         if ((displayNumber == "" && previousDisplayNumber == "") || flagAfterOperation == "1"){
             flagTan = "1"
         }
     }
     
+    /**
+     * Create a Rand Button Action Listener to generate a random double number in range of one to value of current number on the display label.
+     *
+     * @param UIButton as sender
+     */
     @IBAction func RandButton_Pressed(_ sender: UIButton) {
         if ((displayNumber == "" && previousDisplayNumber == "") || flagAfterOperation == "1"){
             flagRand = "1"
