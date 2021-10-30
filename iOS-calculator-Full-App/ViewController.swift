@@ -2,7 +2,9 @@
 //  ViewController.swift
 //  iOS-calculator-Full-App
 //
-//  Created by Ashkan Goharfar on 7/29/1400 AP.
+//  Created by Ashkan Goharfar on 10/21/2021.
+//  Version: 1.0
+//  Std ID: 301206729
 //
 
 
